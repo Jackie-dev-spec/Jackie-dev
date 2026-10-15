@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Academic Planner | Okongwu Jacquelyn</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body class="planner">
+<header class="nav"><div class="wrap"><a class="logo" href="index.html"><b>JO</b>Jacquelyn</a>
+<button class="menu-btn" aria-label="Menu" aria-expanded="false"><svg class="ic"><use href="#i-list"/></svg></button>
+<nav aria-label="Main"><ul><li><a href="index.html"><svg class="ic"><use href="#i-home"/></svg>Home</a></li><li><a href="about.html"><svg class="ic"><use href="#i-user"/></svg>About</a></li><li><a href="projects.html"><svg class="ic"><use href="#i-folder"/></svg>Projects</a></li><li><a href="planner.html" aria-current="page"><svg class="ic"><use href="#i-check"/></svg>Planner</a></li><li><a href="contact.html"><svg class="ic"><use href="#i-mail"/></svg>Contact</a></li></ul></nav></div></header>
+<main>
+<div class="wrap dash"><aside class="panel"><h1 style="font-size:1.7rem;color:var(--wine)">My planner</h1>
+<div class="stat"><svg class="ic"><use href="#i-list"/></svg><div><b id="nAll">0</b>Total tasks</div></div>
+<div class="stat"><svg class="ic"><use href="#i-check"/></svg><div><b id="nDone">0</b>Completed</div></div>
+<div class="stat"><svg class="ic"><use href="#i-book"/></svg><div><b id="nLeft">0</b>Still to do</div></div>
+<div class="filters"><button class="on" data-f="all">All tasks</button><button data-f="todo">To do</button><button data-f="done">Completed</button></div></aside>
+<section class="panel"><form id="taskForm" class="add" novalidate>
+<input name="task" placeholder="e.g. Finish COS 106 project" aria-label="Task"><select name="priority" aria-label="Priority"><option value="high">High</option><option value="medium" selected>Medium</option><option value="low">Low</option></select><input type="date" name="due" aria-label="Due date"><button class="btn"><svg class="ic"><use href="#i-plus"/></svg>Add task</button></form>
+<p class="err" id="taskErr" role="alert"></p><ul class="tasks" id="taskList"></ul>
+<table class="sched"><caption style="text-align:left;font-weight:600;margin-bottom:.4rem">Sample study timetable</caption><thead><tr><th scope="col">Day</th><th scope="col">Morning</th><th scope="col">Afternoon</th></tr></thead>
+<tbody><tr><td>Mon</td><td>COS 106</td><td>Biology reading</td></tr><tr><td>Wed</td><td>Practice HTML</td><td>Content creation</td></tr><tr><td>Fri</td><td>Revision</td><td>Networking events</td></tr></tbody></table></section></div></main>
+<footer class="foot"><p>&copy; 2026 Okongwu Jacquelyn · COS 106, MIVA Open University</p>
+<p><a href="mailto:j.okongwu0337@miva.edu.ng"><svg class="ic"><use href="#i-mail"/></svg>Email</a><a href="https://instagram.com/Jackie_zinny"><svg class="ic"><use href="#i-insta"/></svg>Instagram</a></p></footer>
+<script src="js/main.js"></script></body></html>
