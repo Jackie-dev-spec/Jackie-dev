@@ -1,25 +1,132 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About | Okongwu Jacquelyn</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css"></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Okongwu Jacquelyn</title>
+  <meta name="description" content="About Okongwu Jacquelyn: education, career aspirations, technical skills and interests of a Computer Science student at MIVA Open University.">
+  <meta name="theme-color" content="#0a0c1b">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Plus+Jakarta+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.classList.add("js");
+    try {
+      var saved = localStorage.getItem("theme");
+      var theme = saved ? JSON.parse(saved) : (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+      document.documentElement.dataset.theme = theme;
+    } catch (e) { document.documentElement.dataset.theme = "dark"; }
+  </script>
+  <script src="js/main.js" defer></script>
+</head>
 <body class="about">
-<header class="nav"><div class="wrap"><a class="logo" href="index.html"><b>JO</b>Jacquelyn</a>
-<button class="menu-btn" aria-label="Menu" aria-expanded="false"><svg class="ic"><use href="#i-list"/></svg></button>
-<nav aria-label="Main"><ul><li><a href="index.html"><svg class="ic"><use href="#i-home"/></svg>Home</a></li><li><a href="about.html" aria-current="page"><svg class="ic"><use href="#i-user"/></svg>About</a></li><li><a href="projects.html"><svg class="ic"><use href="#i-folder"/></svg>Projects</a></li><li><a href="planner.html"><svg class="ic"><use href="#i-check"/></svg>Planner</a></li><li><a href="contact.html"><svg class="ic"><use href="#i-mail"/></svg>Contact</a></li></ul></nav></div></header>
-<main>
-<div class="wrap about-grid"><aside class="side"><img src="images/jacquelyn.jpeg" alt="Okongwu Jacquelyn"><h1>Okongwu Jacquelyn</h1><p>Aspiring tech enthusiast and Computer Science student.</p><a class="btn alt" href="contact.html"><svg class="ic"><use href="#i-mail"/></svg>Contact me</a></aside>
-<div>
-<section><h2><svg class="ic"><use href="#i-cap"/></svg>Education</h2><ol class="tl">
-<li><strong>B.Sc. Computer Science, 100 Level</strong>MIVA Open University. Currently studying.</li>
-<li><strong>Itolo Girls Secondary School</strong>2015 – 2021</li></ol></section>
-<section><h2><svg class="ic"><use href="#i-heart"/></svg>Career aspirations</h2><p class="quote">I want to build a successful career in healthcare and life sciences, using my knowledge of biology to improve health and well-being.</p></section>
-<section><h2><svg class="ic"><use href="#i-star"/></svg>Technical skills</h2>
-<table class="tbl"><caption class="sr" style="position:absolute;left:-9999px">Skills and proficiency</caption><thead><tr><th scope="col">Skill</th><th scope="col">Level</th><th scope="col">%</th></tr></thead><tbody><tr><td>Digital literacy</td><td><div class="bar" role="img" aria-label="80 percent"><i data-w="80"></i></div></td><td>80%</td></tr><tr><td>Microsoft Word and document formatting</td><td><div class="bar" role="img" aria-label="70 percent"><i data-w="70"></i></div></td><td>70%</td></tr><tr><td>Internet research and information gathering</td><td><div class="bar" role="img" aria-label="80 percent"><i data-w="80"></i></div></td><td>80%</td></tr><tr><td>Social media management</td><td><div class="bar" role="img" aria-label="85 percent"><i data-w="85"></i></div></td><td>85%</td></tr><tr><td>Content creation and video editing (CapCut)</td><td><div class="bar" role="img" aria-label="85 percent"><i data-w="85"></i></div></td><td>85%</td></tr><tr><td>Presentation and communication</td><td><div class="bar" role="img" aria-label="80 percent"><i data-w="80"></i></div></td><td>80%</td></tr><tr><td>Entrepreneurship and digital marketing</td><td><div class="bar" role="img" aria-label="80 percent"><i data-w="80"></i></div></td><td>80%</td></tr>
-<tr><td>Programming</td><td colspan="2">Coming soon, as I keep learning</td></tr></tbody></table></section>
-<section><h2><svg class="ic"><use href="#i-users"/></svg>Hobbies and interests</h2><ul class="hob"><li><svg class="ic"><use href="#i-users"/></svg><div><strong>Networking</strong><br>Meeting new people, building meaningful connections and learning from others.</div></li></ul></section>
-</div></div></main>
-<footer class="foot"><p>&copy; 2026 Okongwu Jacquelyn · COS 106, MIVA Open University</p>
-<p><a href="mailto:j.okongwu0337@miva.edu.ng"><svg class="ic"><use href="#i-mail"/></svg>Email</a><a href="https://instagram.com/Jackie_zinny"><svg class="ic"><use href="#i-insta"/></svg>Instagram</a></p></footer>
-<script src="js/main.js"></script></body></html>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2 20c0-3.5 3-5.5 7-5.5s7 2 7 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="17" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M17 14.5c3 0 5 1.5 5 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6h7l2 2h9v11H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Okongwu Jacquelyn, home"><b>JO</b>Jacquelyn</a>
+
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false">
+        <svg class="ic"><use href="#i-list"/></svg>
+      </button>
+
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html"><svg class="ic"><use href="#i-home"/></svg>Home</a></li>
+          <li><a href="about.html" aria-current="page"><svg class="ic"><use href="#i-user"/></svg>About</a></li>
+          <li><a href="projects.html"><svg class="ic"><use href="#i-folder"/></svg>Projects</a></li>
+          <li><a href="planner.html"><svg class="ic"><use href="#i-check"/></svg>Planner</a></li>
+          <li><a href="contact.html"><svg class="ic"><use href="#i-mail"/></svg>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap about-grid">
+
+      <aside class="side">
+        <img src="images/jacquelyn.jpeg" alt="Okongwu Jacquelyn">
+        <h1>Okongwu Jacquelyn</h1>
+        <p>Aspiring tech enthusiast and Computer Science student.</p>
+        <a class="btn alt" href="contact.html"><svg class="ic"><use href="#i-mail"/></svg>Contact me</a>
+      </aside>
+
+      <div>
+
+        <section>
+          <h2><svg class="ic"><use href="#i-cap"/></svg>Education</h2>
+          <ol class="tl">
+            <li><strong>B.Sc. Computer Science, 100 Level</strong>MIVA Open University. Currently studying.</li>
+            <li><strong>Itolo Girls Secondary School</strong>2015 – 2021</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2><svg class="ic"><use href="#i-heart"/></svg>Career aspirations</h2>
+          <p class="quote">I want to build a successful career in healthcare and life sciences, using my knowledge of biology to improve health and well-being.</p>
+        </section>
+
+        <section>
+          <h2><svg class="ic"><use href="#i-star"/></svg>Technical skills</h2>
+          <table class="tbl">
+            <caption class="sr" style="position:absolute;left:-9999px">Skills and proficiency</caption>
+            <thead>
+              <tr><th scope="col">Skill</th><th scope="col">Level</th><th scope="col">%</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Digital literacy</td><td><div class="bar" role="img" aria-label="80 percent"><i data-w="80"></i></div></td><td>80%</td></tr>
+              <tr><td>Microsoft Word and document formatting</td><td><div class="bar" role="img" aria-label="70 percent"><i data-w="70"></i></div></td><td>70%</td></tr>
+              <tr><td>Internet research and information gathering</td><td><div class="bar" role="img" aria-label="80 percent"><i data-w="80"></i></div></td><td>80%</td></tr>
+              <tr><td>Social media management</td><td><div class="bar" role="img" aria-label="85 percent"><i data-w="85"></i></div></td><td>85%</td></tr>
+              <tr><td>Content creation and video editing (CapCut)</td><td><div class="bar" role="img" aria-label="85 percent"><i data-w="85"></i></div></td><td>85%</td></tr>
+              <tr><td>Presentation and communication</td><td><div class="bar" role="img" aria-label="80 percent"><i data-w="80"></i></div></td><td>80%</td></tr>
+              <tr><td>Entrepreneurship and digital marketing</td><td><div class="bar" role="img" aria-label="80 percent"><i data-w="80"></i></div></td><td>80%</td></tr>
+              <tr><td>Programming</td><td colspan="2">Coming soon, as I keep learning</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2><svg class="ic"><use href="#i-users"/></svg>Hobbies and interests</h2>
+          <ul class="hob">
+            <li>
+              <svg class="ic"><use href="#i-users"/></svg>
+              <div><strong>Networking</strong><br>Meeting new people, building meaningful connections and learning from others.</div>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <p>&copy; 2026 Okongwu Jacquelyn · COS 106, MIVA Open University</p>
+    <p>
+      <a href="mailto:j.okongwu0337@miva.edu.ng"><svg class="ic"><use href="#i-mail"/></svg>Email</a>
+      <a href="https://instagram.com/Jackie_zinny"><svg class="ic"><use href="#i-insta"/></svg>Instagram</a>
+    </p>
+  </footer>
+
+</body>
+</html>
