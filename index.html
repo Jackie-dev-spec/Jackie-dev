@@ -1,29 +1,118 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Home | Okongwu Jacquelyn</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css"></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Okongwu Jacquelyn</title>
+  <meta name="description" content="Portfolio of Okongwu Jacquelyn, a Computer Science student at MIVA Open University who loves technology, creativity and continuous learning.">
+  <meta name="theme-color" content="#0a0c1b">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Plus+Jakarta+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.classList.add("js");
+    try {
+      var saved = localStorage.getItem("theme");
+      var theme = saved ? JSON.parse(saved) : (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+      document.documentElement.dataset.theme = theme;
+    } catch (e) { document.documentElement.dataset.theme = "dark"; }
+  </script>
+  <script src="js/main.js" defer></script>
+</head>
 <body class="home">
-<header class="nav"><div class="wrap"><a class="logo" href="index.html"><b>JO</b>Jacquelyn</a>
-<button class="menu-btn" aria-label="Menu" aria-expanded="false"><svg class="ic"><use href="#i-list"/></svg></button>
-<nav aria-label="Main"><ul><li><a href="index.html" aria-current="page"><svg class="ic"><use href="#i-home"/></svg>Home</a></li><li><a href="about.html"><svg class="ic"><use href="#i-user"/></svg>About</a></li><li><a href="projects.html"><svg class="ic"><use href="#i-folder"/></svg>Projects</a></li><li><a href="planner.html"><svg class="ic"><use href="#i-check"/></svg>Planner</a></li><li><a href="contact.html"><svg class="ic"><use href="#i-mail"/></svg>Contact</a></li></ul></nav></div></header>
-<main>
-<section class="wrap hero"><div>
-<span class="pill"><svg class="ic"><use href="#i-heart"/></svg>Computer Science, 100 Level</span>
-<h1>Hi, I'm Jacquelyn Okongwu.</h1>
-<p>Welcome to my portfolio. I'm an aspiring tech enthusiast who loves technology, creativity and continuous learning. I'm building my digital skills and exploring how technology can solve everyday problems, with a goal of growing my knowledge, embracing innovation and building a successful future in the digital world.</p>
-<div class="cta"><a class="btn" href="projects.html"><svg class="ic"><use href="#i-folder"/></svg>See my projects</a><a class="btn alt" href="contact.html"><svg class="ic"><use href="#i-mail"/></svg>Get in touch</a></div></div>
-<div class="arch"><img src="images/jacquelyn.jpeg" alt="Portrait of Okongwu Jacquelyn smiling in a yellow top and statement glasses">
-<span class="chip a"><svg class="ic"><use href="#i-star"/></svg>Content creator</span><span class="chip b"><svg class="ic"><use href="#i-cap"/></svg>MIVA student</span></div></section>
-<section class="wrap"><div class="about-strip"><div><h2>A little about me</h2>
-<p>I study Computer Science at MIVA Open University. Outside class I create content, manage social media and meet new people. My career goal is to work in healthcare and life sciences and use my knowledge of biology to improve people's health and well-being.</p></div>
-<div class="audio-box"><svg class="ic"><use href="#i-heart"/></svg> Hear my welcome message<br><audio controls preload="none"><source src="media/welcome-message.mp3" type="audio/mpeg"><source src="media/welcome-message.ogg" type="audio/ogg">Your browser does not support audio.</audio></div></div></section>
-<section class="wrap tiles" aria-label="Explore the site">
-<a class="tile" href="about.html"><svg class="ic"><use href="#i-user"/></svg><h3>About me</h3><p>Education, skills and interests.</p></a>
-<a class="tile" href="projects.html"><svg class="ic"><use href="#i-folder"/></svg><h3>Projects</h3><p>Three ideas I've designed.</p></a>
-<a class="tile" href="planner.html"><svg class="ic"><use href="#i-check"/></svg><h3>Academic planner</h3><p>Add, finish and delete tasks.</p></a>
-<a class="tile" href="contact.html"><svg class="ic"><use href="#i-chat"/></svg><h3>Contact</h3><p>Send me a message.</p></a></section></main>
-<footer class="foot"><p>&copy; 2026 Okongwu Jacquelyn · COS 106, MIVA Open University</p>
-<p><a href="mailto:j.okongwu0337@miva.edu.ng"><svg class="ic"><use href="#i-mail"/></svg>Email</a><a href="https://instagram.com/Jackie_zinny"><svg class="ic"><use href="#i-insta"/></svg>Instagram</a></p></footer>
-<script src="js/main.js"></script></body></html>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6h7l2 2h9v11H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z M6 11.5V16c0 1.5 3 3 6 3s6-1.500 6-3v-4.500" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Okongwu Jacquelyn, home"><b>JO</b>Jacquelyn</a>
+
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false">
+        <svg class="ic"><use href="#i-list"/></svg>
+      </button>
+
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page"><svg class="ic"><use href="#i-home"/></svg>Home</a></li>
+          <li><a href="about.html"><svg class="ic"><use href="#i-user"/></svg>About</a></li>
+          <li><a href="projects.html"><svg class="ic"><use href="#i-folder"/></svg>Projects</a></li>
+          <li><a href="planner.html"><svg class="ic"><use href="#i-check"/></svg>Planner</a></li>
+          <li><a href="contact.html"><svg class="ic"><use href="#i-mail"/></svg>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="wrap hero">
+      <div>
+        <span class="pill"><svg class="ic"><use href="#i-heart"/></svg>Computer Science, 100 Level</span>
+        <h1>Hi, I'm Jacquelyn Okongwu.</h1>
+        <p>Welcome to my portfolio. I'm an aspiring tech enthusiast who loves technology, creativity and continuous learning. I'm building my digital skills and exploring how technology can solve everyday problems, with a goal of growing my knowledge, embracing innovation and building a successful future in the digital world.</p>
+        <div class="cta">
+          <a class="btn" href="projects.html"><svg class="ic"><use href="#i-folder"/></svg>See my projects</a>
+          <a class="btn alt" href="contact.html"><svg class="ic"><use href="#i-mail"/></svg>Get in touch</a>
+        </div>
+      </div>
+      <div class="arch">
+        <img src="images/jacquelyn.jpeg" alt="Portrait of Okongwu Jacquelyn smiling in a yellow top and statement glasses">
+        <span class="chip a"><svg class="ic"><use href="#i-star"/></svg>Content creator</span>
+        <span class="chip b"><svg class="ic"><use href="#i-cap"/></svg>MIVA student</span>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="about-strip">
+        <div>
+          <h2>A little about me</h2>
+          <p>I study Computer Science at MIVA Open University. Outside class I create content, manage social media and meet new people. My career goal is to work in healthcare and life sciences and use my knowledge of biology to improve people's health and well-being.</p>
+        </div>
+        <div class="audio-box">
+          <svg class="ic"><use href="#i-heart"/></svg> Hear my welcome message<br>
+          <audio controls preload="none">
+            <source src="media/welcome-message.mp3" type="audio/mpeg">
+            <source src="media/welcome-message.ogg" type="audio/ogg">
+            Your browser does not support audio.
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap tiles" aria-label="Explore the site">
+      <a class="tile" href="about.html"><svg class="ic"><use href="#i-user"/></svg><h3>About me</h3><p>Education, skills and interests.</p></a>
+      <a class="tile" href="projects.html"><svg class="ic"><use href="#i-folder"/></svg><h3>Projects</h3><p>Three ideas I've designed.</p></a>
+      <a class="tile" href="planner.html"><svg class="ic"><use href="#i-check"/></svg><h3>Academic planner</h3><p>Add, finish and delete tasks.</p></a>
+      <a class="tile" href="contact.html"><svg class="ic"><use href="#i-chat"/></svg><h3>Contact</h3><p>Send me a message.</p></a>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <p>&copy; 2026 Okongwu Jacquelyn · COS 106, MIVA Open University</p>
+    <p>
+      <a href="mailto:j.okongwu0337@miva.edu.ng"><svg class="ic"><use href="#i-mail"/></svg>Email</a>
+      <a href="https://instagram.com/Jackie_zinny"><svg class="ic"><use href="#i-insta"/></svg>Instagram</a>
+    </p>
+  </footer>
+
+</body>
+</html>
